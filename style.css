@@ -1,0 +1,524 @@
+/*
+
+CONFIGURAÇÕES PADRONIZADAS PARA FORMATAÇÃO DA PÁGINA
+
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased; 
+    -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+    font-size: 62.5%;
+
+    --color-bg-primary: rgb(249,244,251,100%);
+    --color-bg-secondary: rgb(52,49,147,100%);
+    --color-ff-primary: rgb(181,33,132,100%);
+    --color-ff-secondary: rgb(49,45,100,100%);
+    --ff-mulish: 'Mulish', sans-serif;
+    --ff-roboto: 'Roboto', sans-serif;
+    
+}
+
+/*
+
+AQUI COMEÇA O HEADER E SUA CONF.
+
+*/
+
+
+.page {
+    font-family: var(--ff-mulish);
+    min-width: 39rem;
+}
+
+header {
+    display: flex;
+    height: 68.8rem;
+}
+
+.initial {
+    flex-direction: column;
+    margin: 0 auto;  
+    
+}
+
+.titleHeader {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.initial h1, .text h1, .titleFooter h1 {
+    font-family: var(--ff-mulish);
+    color: var(--color-ff-primary);
+    
+    font-size: 3.2rem;
+    font-weight: 900;
+    font-style: normal;
+    text-align: center;
+    line-height: normal;
+    margin-top: 1.7rem;
+    
+}
+
+.initial h2 {
+    font-family: var(--ff-mulish);
+    color: var(--color-ff-secondary);    
+
+    font-size: 2.0rem;
+    font-weight: 600;
+    font-style: normal;
+    text-align: center;
+    line-height: normal;
+}
+
+.arrowDivImg {
+    display: flex;
+    margin: 3.5rem auto 9.3rem;   
+}
+
+.arrowImg {
+    display: flex;
+    margin:0 auto;
+}
+
+/*
+
+AQUI COMEÇA O CORPO DA PAGINA E SUAS CONF.
+
+*/
+
+.content {
+    background-color: var(--color-bg-secondary);
+    
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+
+}
+
+main {
+    background-color: var(--color-bg-secondary);
+}
+
+.card {
+    background-color: var(--color-bg-primary);
+
+    width: 35rem;
+    height: 37rem;
+    
+    margin: 5rem auto 0rem;
+    border-radius: 2.0rem;
+    
+}
+
+div .card:nth-child(3) {
+    margin-bottom: 5.5rem;
+}
+
+.card img {
+    margin: 2.6rem 0 3rem 0;
+}
+
+.text, .card img {
+    margin-left: 2.6rem;
+
+}
+
+.text h1{
+    margin: 0;
+    font-size: 3rem;
+    text-align: start;
+}
+
+.card p {
+    font-family: var(--ff-mulish);
+    color: var(--color-ff-secondary);
+
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: normal;
+
+    margin: 2rem 0 2.6rem;
+    width: 26rem;
+}
+
+/*
+
+AQUI COMEÇA O FOOTER E SUA CONF.
+
+*/
+
+footer {
+    background-color: var(--color-bg-primary);    
+    display: flex;
+    flex-direction: column;
+  
+}
+.cardFooter {
+    margin: 7.8rem auto;  
+    width: 35rem;
+    height: 42rem;  
+}
+
+.titleFooter h1{
+    margin: 0;
+    font-size: 3.2rem;
+    text-align: start;
+
+}
+
+fieldset {
+    border-color: var(--color-ff-secondary);
+   
+    width: 34.8rem;
+    height: 4.8rem;
+    border-radius: 1.6rem;
+    display: flex;
+    padding: 1.2rem  1.2rem;
+
+
+    margin-top: 2.4rem ;
+}
+
+fieldset:nth-child(3) {
+    height: 12.6rem;
+}
+
+.sendButton input {
+    background-color: var(--color-bg-secondary);
+    
+    font-family: var(--ff-mulish);
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 2.4rem;
+    text-transform: capitalize;
+    color:var(--color-bg-primary);
+
+    border-radius: 1.6rem;
+    border-style: none;
+
+    padding: 1.1rem 1.6rem;
+
+    margin-top: 2.4rem;
+}
+
+fieldset img {
+    padding-right: 1.2rem;    
+    text-align: center;
+}
+
+fieldset input::placeholder, textarea::placeholder {
+    font-family: var(--ff-mulish);
+    color: var(--color-ff-secondary);    
+
+    font-size: 1.6rem;
+    font-weight: 600;
+    font-style: normal;
+    text-align: initial;
+    line-height: normal;
+       
+}
+
+fieldset textarea {
+    resize: none;
+    width: 31.6rem;
+    border-style: none;
+    padding: .5rem;
+    background-color: var(--color-bg-primary);
+
+}
+
+fieldset input::placeholder:nth-child(3) {
+    text-align: top;
+    
+}
+
+fieldset input {
+    display: block;    
+    width: 28.2rem;
+    border-style: none;
+    text-align: start;
+    padding: .5rem;
+    background-color: var(--color-bg-primary);
+}
+
+
+div .asideFooter {
+    background-color: var(--color-bg-secondary);
+}
+
+.asideFooter p {
+    color: var(--color-bg-primary);
+    font-family: var(--ff-mulish);
+
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: normal;
+    text-align: center;
+    font-style: normal;
+
+    margin: 3.2rem auto;
+
+}
+
+.footerStars img {
+    display: none;    
+}  
+
+
+/*
+
+TODAS AS ANIMAÇÕES DA PÁGINA
+
+*/
+
+header .arrowImg {
+    --startY: -100%;
+    animation: move .4s;
+}
+
+
+@keyframes move {
+    from {
+        transform: translateY(var(--startY));
+    }
+
+    to {
+    
+    }
+}
+
+.content .card img {
+    object-fit: cover;
+    transition: all 200ms ease-out;
+    display: block;
+}
+
+.content .card img:hover {
+    filter: hue-rotate(7deg) contrast(101%) saturate(150%);
+    transform: scale(1.1) rotate(-2deg);
+}
+
+ 
+
+/*
+
+TRATAMENTO DA RESPONSIVIDADE DA PÁGINA DESKTOP/NOBILE
+
+*/
+
+@media (min-width: 768px) {
+
+    /*
+    
+    ALTERAÇÃO DO CABEÇALHO DA PÁGINA
+    
+    */
+   
+
+    header {
+        display: flex;
+        justify-content: space-between; 
+        margin: 0 10rem;   
+    }
+
+    .initial{
+        display: grid;
+        width: 100%;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: max-content 1fr;
+        
+        justify-content: space-between;
+        margin: 0;
+        padding: 0;
+
+    }
+
+    .initialImg {
+
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 3;
+        z-index: 1;
+        
+        width: 52rem;
+    }
+
+    .titleHeader {
+
+        margin-top: 20rem;
+        padding: 0;
+        align-items: flex-start;
+
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 2;
+        grid-row-end: 2;
+
+    }
+
+    .titleHeader h1 {
+        font-size: 5.8rem;
+    }
+
+    .titleHeader h2 {
+        font-size: 3.2rem;  
+        align-content: start;
+    }
+
+    .arrowDivImg {
+        display: flex;
+        height: max-content;
+       
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 2;
+        grid-row-end: 2;
+       
+        margin-right: 60rem;
+        margin-top: 46rem;
+        align-items: left;
+    }
+
+    /*
+    
+    ALTERAÇÃO DO CORPO/CARDS DA PAGINA
+
+    */
+
+    .content {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin: 0 auto;
+        max-width: 130rem;
+    }
+
+    /*
+    
+    ALTERAÇÃO DO FOOTER
+    
+    */
+
+    footer {
+        display: grid;
+        
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .footerStars {
+        display: grid;
+        grid-column-start: 2;
+        grid-column-end: 2;
+        justify-content: flex-end;
+        
+    }
+
+    .asideFooter {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    fieldset {
+        width: 50rem;
+    }
+
+    
+    @media (max-width: 1100px) {
+    
+        .initial{
+            display: grid;
+            width: 100%;
+            grid-template-columns: max-content ;
+            grid-template-rows: max-content;
+            justify-content: center;
+            margin-left:15em;
+            padding: 0;
+        }
+
+        .initialImg {
+
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 1;
+            grid-row-end: 3;
+            z-index: 1;
+            justify-content: center;
+            width: 38rem;
+        }
+        
+        .titleHeader {
+
+            margin-top: 40rem;
+            padding: 0;
+            align-items: flex-start;
+    
+            grid-column-start: 1;
+            grid-column-end: 1;
+            grid-row-start: 2;
+            grid-row-end: 2;
+        }
+    
+        .titleHeader h1 {
+            font-size: 5.8rem;
+        }
+    
+        .titleHeader h2 {
+            font-size: 3.2rem;  
+            align-content: start;
+        }
+
+        .arrowDivImg {
+            display: flex;
+            height: max-content;
+           
+            grid-column-start: 1;
+            grid-column-end: 1;
+            grid-row-start: 2;
+            grid-row-end: 2;
+           
+            margin-right: 60rem;
+            margin-top: 56rem;
+            align-items: left;
+        }
+        .arrowImg {
+            
+            margin-left:20rem;
+        }
+
+        .content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            margin: 0 auto;
+            max-width: 130rem;
+        }
+
+        footer {
+            display: grid;
+            grid-template-columns: 1fr;
+            align-items: center;
+        }
+    
+        .cardFooter {
+           
+            grid-template-columns: 1fr;
+        }
+    }
+    
+    @media (min-width: 1200px) {
+        .footerStars img {
+            display: flex;    
+        }  
+        
+    }
+    
+}
